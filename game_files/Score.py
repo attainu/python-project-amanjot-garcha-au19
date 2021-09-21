@@ -44,13 +44,13 @@ def turn(player,score): #Turn function
             lad = ladders.checkForladders(score) #checking for ladders for player
             
             if lad != score:
-                print("hurraayy there's a ladder!!! ",player,"climbed up")
+                print("hurraayy there's a ladder on  ",score, "  ",player,"climbed up to box ", lad)
                 time.sleep(delay)
                 print()
                 score = lad
             snk = snakes.checkForSnakes(score)
             if snk != score: #checking for snakes for player
-                print("oooops", player,"got bitten by a snake!",player,"fell down!")
+                print("oooops there's a venomous snake on box ", score, "  ",player,"fell down to box ", snk)
                 time.sleep(delay)
                 
                 score = snk
